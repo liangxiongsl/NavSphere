@@ -8,7 +8,7 @@ import { Sidebar } from '@/components/sidebar'
 import { SearchBar } from '@/components/search-bar'
 import { ModeToggle } from '@/components/mode-toggle'
 import { Footer } from '@/components/footer'
-import { Github, HelpCircle, Puzzle } from 'lucide-react'
+import { Github, HelpCircle, Puzzle, SquarePen } from 'lucide-react'
 import { Button } from "@/registry/new-york/ui/button"
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -142,7 +142,7 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
             <div className="flex items-center gap-1">
               <ModeToggle />
               <Link
-                href="https://github.com/tianyaxiang/NavSphere"
+                href="https://github.com/liangxiongsl/NavSphere"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="访问 GitHub 仓库"
@@ -156,6 +156,20 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                 </Button>
               </Link>
               <Link
+                href="/admin"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Admin"
+              >
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="hover:bg-accent hover:text-accent-foreground"
+                >
+                  <SquarePen className="h-5 w-5" />
+                </Button>
+              </Link>
+              {/* <Link
                 href="https://github.com/tianyaxiang/navsphere-extension"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -168,8 +182,8 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                 >
                   <Puzzle className="h-5 w-5" />
                 </Button>
-              </Link>
-              <Link
+              </Link> */}
+              {/* <Link
                 href="https://mp.weixin.qq.com/s/90LUmKilfLZfc5L63Ej3Sg"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -182,7 +196,7 @@ export function NavigationContent({ navigationData, siteData }: NavigationConten
                 >
                   <HelpCircle className="h-5 w-5" />
                 </Button>
-              </Link>
+              </Link> */}
               <Button
                 variant="ghost"
                 size="icon"
