@@ -1348,6 +1348,15 @@
           ]
         }
       ]
+    },
+    {
+      "id": "1761547750237",
+      "title": "114514",
+      "icon": "Settings",
+      "description": "test",
+      "enabled": true,
+      "items": [],
+      "subCategories": []
     }
   ]
 }
